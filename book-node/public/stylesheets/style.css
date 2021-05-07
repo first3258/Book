@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+.form-signin {
+  width: 100%;
+  max-width: 940px;
+  padding: 2rem;
+  margin: auto;
+  background-color: #f3f3f3;
+}
+
+.nav{
+  width: 100%;
+  max-width: 940;
+  padding: .5rem;
+  margin-bottom: 3em;
+  background-color: #acdaec;
+}
+
+.nav button{
+  float: right;
+}
