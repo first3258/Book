@@ -7,6 +7,9 @@ const orderSchema = new Schema({
     unique: true
   },
   address: String,
+  book1: {
+    type: Number
+  },
   date: {
     type: Date,
     default: Date.now

@@ -3,7 +3,7 @@ const router = express.Router()
 const Order = require('../model/order')
 
 router.post('/register', async (req, res) => {
-  const { name, id, address} = req.body;
+  const { name, id, address, book1} = req.body;
 
   if(!name || !id || !address) {
     return res.render('register', { message_error: 'Please try again'})
@@ -12,7 +12,8 @@ router.post('/register', async (req, res) => {
   const order = new Order({
     name,
     id,
-    address
+    address,
+    book1
   })
 
   await order.save();

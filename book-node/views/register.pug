@@ -23,6 +23,8 @@ block content
       .form-group
         label(for="address" class="sr-only") Address
         input(type="text" name="address" id="address" class="form-control" placeholder="address" required)
+        <img class="mt-5" src="https://www.b2s.co.th/media/catalog/product/cache/a9f339461e1d230e7c2571bd43680eb2/s/a/sapiens_1.jpg" alt="alternatetext" width="120" >
+          <input type="number" name="book1" id="book1">
       button(class="btn btn-primary btn-block" type="submit") Submit
 
       if (message_error)
@@ -30,5 +32,6 @@ block content
 
       if (message)
         p.alert.alert-success #{message}
+
 
   
