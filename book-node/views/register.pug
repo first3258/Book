@@ -1,19 +1,21 @@
 extend layout
 block content
   nav(class="navbar navbar-expand-md navbar-dark bg-dark mb-5")
+    <i class="p-nav fas fa-book m-2 "></i>
+      <p class="p-nav m-2 ">Kaiju </p>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/register">Add Order</a>
+                <a class="nav-link nav-text" href="/addbook">Add Order</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/login">Order List</a>
+                <a class="nav-link" href="/listbook">Order List</a>
             </li>
         </ul>
     </div>
   .form-container
     form(class="form-signin" method="POST" action="/auth/register")
-      h2 Book Service
+      h2 Kaiju Book Store
       .form-group
         label( for="name" class="sr-only") Name (Optional)
         input(type="text" name="name" id="name" class="form-control" placeholder="Name")
@@ -23,9 +25,19 @@ block content
       .form-group
         label(for="address" class="sr-only") Address
         input(type="text" name="address" id="address" class="form-control" placeholder="address" required)
-        <img class="mt-5" src="https://www.b2s.co.th/media/catalog/product/cache/a9f339461e1d230e7c2571bd43680eb2/s/a/sapiens_1.jpg" alt="alternatetext" width="120" >
-          <input type="number" name="book1" id="book1">
-      button(class="btn btn-primary btn-block" type="submit") Submit
+        <img class="mt-5 book" src="https://www.b2s.co.th/media/catalog/product/cache/a9f339461e1d230e7c2571bd43680eb2/s/a/sapiens_1.jpg" alt="alternatetext" width="120" height="180" >
+          <input class="input" type="number" name="book1" id="book1">
+            <span class="price-add">395 <i class="fab fa-bitcoin"></i></span>
+        <img class="mt-5 book" src=" https://www.b2s.co.th/media/catalog/product/cache/a9f339461e1d230e7c2571bd43680eb2/5/2/5246710_1.jpg" alt="alternatetext" width="120"  height="180">
+          <input class="input" type="number" name="book2" id="book2">
+            <span class="price-add">530 <i class="fab fa-bitcoin"></i></span><br>
+        <img class="mt-5 book" src=" https://readery.co/media/catalog/product/cache/1/small_image/360x/17f82f742ffe127f42dca9de82fb58b1/9/7/9786162873768.jpg" alt="alternatetext" width="120"  height="180">
+          <input class="input" type="number" name="book3" id="book3">
+            <span class="price-add">365 <i class="fab fa-bitcoin"></i></span>
+        <img class="mt-5 book" src=" https://readery.co/media/catalog/product/cache/1/small_image/360x/17f82f742ffe127f42dca9de82fb58b1/9/7/9786161838140.png" alt="alternatetext" width="120"  height="180">
+          <input class="input" type="number" name="book4" id="book4">
+            <span class="price-add">295 <i class="fab fa-bitcoin"></i></span>
+      button(class="btn btn-warning btn-block mt-5" style="font-weight: bold;" type="submit") Add Order
 
       if (message_error)
         p.alert.alert-danger #{message_error}

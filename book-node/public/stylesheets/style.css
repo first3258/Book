@@ -30,3 +30,49 @@ a {
 .nav button{
   float: right;
 }
+
+.p-nav{
+  color: white;
+  font-size: 20px;
+  margin-left: 4em;
+}
+
+.price{
+  color:green;
+  font-size: 20px;
+}
+
+.icon{
+  color: coral;
+  width: 10px;
+}
+
+.text{
+  color: coral;
+  text-shadow: 0 0 0.1px coral,
+        0 0 0.1px coral
+}
+
+.nav-text{
+  text-shadow: 0 0 0.3px white,
+        0 0 0.3px white
+}
+
+.book{
+  margin-left: 130px;
+  border: coral solid 5px;
+  border-radius: 10px;
+}
+
+.input{
+  margin-left: 30px;
+  width: 50px;
+  height: 20px;
+}
+
+.price-add{
+  font-size: 15px;
+  color: crimson;
+  font-weight: bold;
+  
+}

@@ -7,15 +7,19 @@ const orderSchema = new Schema({
     unique: true
   },
   address: String,
-  book1: {
-    type: Number
+  book: {
+    type: Array
   },
   date: {
     type: Date,
     default: Date.now
+  },
+  price: {
+    type: Number
   }
 })
-const OrderModel = mongoose.model('Order', orderSchema);
+
+const OrderModel = mongoose.model('orders', orderSchema);
 
 module.exports = OrderModel
 
