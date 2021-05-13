@@ -16,6 +16,8 @@ block content
   .form-container
     form(class="form-signin" method="POST" action="/auth/register")
       h2 Kaiju Book Store
+      if (message)
+        p.alert.alert-success #{message}
       .form-group
         label( for="name" class="sr-only") Name (Optional)
         input(type="text" name="name" id="name" class="form-control" placeholder="Name")
@@ -41,9 +43,6 @@ block content
 
       if (message_error)
         p.alert.alert-danger #{message_error}
-
-      if (message)
-        p.alert.alert-success #{message}
 
 
   
